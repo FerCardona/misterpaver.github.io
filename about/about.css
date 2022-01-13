@@ -1,0 +1,75 @@
+.main {
+    width: 65%;
+    margin: 20px auto 60px;
+    padding-bottom: 30px;
+  }
+
+.main h1 {
+text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+  padding: 20px 0;
+}
+.descrip1, .descrip2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+} 
+.descrip2 p {
+    order: -1;
+}
+.ramon1, .ramon2, .descrip1 p, .descrip2 p {
+    padding: 0 30px;
+}
+.main p {
+    font-size: 18px;
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .main {
+        width: 80%;
+      }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .main {
+        width: 90%;
+      }
+    .main p {
+        font-size: 16px;
+      }
+      .main h1 {
+        font-size: 28px;
+      }
+      .ramon1 {
+          width: 400px;
+      }
+      .ramon2 {
+          width: 300px;
+      }
+  }
+  
+  @media only screen and (max-width: 750px) {
+    .main p {
+        font-size: 14px;
+      }
+      .ramon1 {
+        width: 350px;
+    }
+    .ramon2 {
+        width: 250px;
+    }
+    .ramon1, .ramon2, .descrip1 p, .descrip2 p {
+        padding: 0 10px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .main h1 {
+        font-size: 22px;
+      }
+      .descrip1, .descrip2 {
+        flex-direction: column;
+    } 
+  }

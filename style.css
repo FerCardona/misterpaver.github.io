@@ -1,0 +1,573 @@
+@font-face {
+  font-family: 'Kaushan Script';
+  src: url(font/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  src: url(font/YanoneKaffeesatz-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Sansita';
+  src: url(font/Sansita-Regular.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  font-family: 'Sansita', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+* p {
+  font-family: 'Yanone Kaffeesatz';
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+
+.active {
+  background: #72D03D;
+  padding: 2px 15px;
+  border-radius: 60% 0;
+}
+
+/* H E A D E R  */
+header {
+  width: 80%;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 3;
+  position: sticky;
+  top: 0;
+}
+
+.logo h1 {
+  font-size: 50px;
+  font-family: 'Kaushan Script';
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.navbar a:link,
+.navbar a:visited,
+.navbar a:active {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+  color: #fff;
+  border-right: 2px solid #fff;
+  padding: 5px 30px;
+}
+
+.navbar a:last-child {
+  border-right: none;
+}
+
+.navbar li:hover {
+  color: #72D03D;
+}
+
+.navbar li[class="active"] {
+  color: #fff;
+}
+
+.submenu {
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: right;
+}
+.submenu h2 {
+  text-align: right;
+}
+.submenu h2,
+.navbar li {
+  font-family: 'Yanone Kaffeesatz';
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.submenu a:link,
+.submenu a:visited,
+.submenu a:active {
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.submenu i {
+  color: purple;
+}
+
+.submenu a:hover {
+  color: #72D03D;
+}
+
+/* S L I D E R  */
+.slider-container {
+  width: 800px;
+  margin: 0 auto 40px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.slide img {
+  width: 100%;
+}
+
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-size: 35px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  font-size: 35px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/*   M    A    I    N    */
+.main-info {
+  width: 70%;
+  margin: 20px auto;
+}
+
+/* F E A T U R E S  */
+.featMain h1,
+.romex h1,
+.solutions-title h1,
+.testimonials-title h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 42px;
+  padding: 20px 0;
+}
+
+.featMain {
+  margin: 30px 0;
+  padding: 20px 10px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.feature-info {
+  width: 31%;
+}
+
+.feature-info h2 {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #72D03D;
+  border-radius: 60% 0;
+  margin-bottom: 20px;
+}
+
+.romex {
+  width: 35%;
+  display: block;
+  margin: 50px auto 0 auto;
+}
+
+.imgromex {
+  float: right;
+  margin: 5px;
+}
+
+/*  S O LU T I O N S */
+.solutions-title {
+  margin: 30px 0;
+}
+
+.solutions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.solutions-info {
+  padding: 10px;
+  width: 42%;
+  margin: 10px 0;
+}
+
+.solutions-info h2 {
+  text-align: center;
+  width: 80%;
+  padding: 0 30px;
+  background-color: #72D03D;
+  border-radius: 60% 0;
+  margin: 10px auto;
+}
+
+.solutions-info img {
+  width: 200px;
+  display: block;
+  margin: 10px auto;
+}
+
+.solutions-info p {
+  text-align: center;
+}
+
+/*  T E S T I M O N I A L S  */
+.testimonials {
+  margin: 30px 0;
+}
+
+.testimonials-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.testimonials-info p {
+  width: 30%;
+  padding: 10px;
+}
+
+.testimonials-title h1 {
+  padding-bottom: 0;
+}
+
+.testimonials-title p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.testimonials-info .fas {
+  vertical-align: super;
+  font-style: italic;
+}
+
+/*  F O O T E R  */
+footer {
+  width: 70%;
+  margin: 50px auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logofooter h1 {
+  font-size: 30px;
+  font-family: 'Kaushan Script';
+}
+
+.logofooter,
+.navfooter,
+.contactfooter {
+  width: 33%;
+}
+
+.logo p {
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.navfooter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  list-style-type: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.navfooter a:link,
+.navfooter a:visited,
+.navfooter a:active,
+.contactfooter a {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 2px;
+}
+
+.navfooter li {
+  font-family: 'Yanone Kaffeesatz';
+  text-transform: uppercase;
+}
+
+.navfooter li:hover {
+  color: #72D03D;
+}
+
+.contactfooter .fas,
+.contactfooter .fab {
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.contactfooter {
+  text-align: right;
+}
+
+.contactfooter p {
+  padding: 5px;
+}
+
+.separator {
+  content: "";
+  border: 4px solid #72D03D;
+  width: 600px;
+  background-color: #72D03D;
+  border-radius: 60% 0;
+  margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  header {
+    width: 92%;
+  }
+
+  .logo h1 {
+    font-size: 45px;
+  }
+
+  .submenu {
+    font-size: 12px;
+  }
+
+  .navbar {
+    font-size: 14px;
+  }
+
+  /*   M    A    I    N    */
+  .main-info {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .featMain h1,
+  .romex h1,
+  .solutions-title h1,
+  .testimonials-title h1 {
+    font-size: 37px;
+  }
+
+  * h2 {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+
+  * p {
+    font-size: 15px;
+  }
+
+  footer {
+    width: 80%;
+  }
+
+  .logofooter h1 {
+    font-size: 25px;
+  }
+
+  .navfooter li {
+    font-size: 12px;
+  }
+
+  .contactfooter .fas,
+  .contactfooter .fab {
+    font-size: 14px;
+  }
+
+  .contactfooter h1 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  * h2 {
+    font-size: 16px;
+  }
+
+  * p {
+    font-size: 12px;
+  }
+
+  .logo h1 {
+    font-size: 40px;
+  }
+
+  .submenu h2 {
+    font-size: 16px;
+  }
+
+  .navbar {
+    font-size: 10px;
+  }
+
+  .navbar a:link,
+  .navbar a:visited,
+  .navbar a:active {
+    padding: 10px;
+  }
+
+  .navbar,
+  .submenu {
+    margin-right: 10px;
+  }
+
+  /* S L I D E R  */
+  .slider-container {
+    width: 600px;
+  }
+
+  .imgromex {
+    width: 60%;
+    margin: 5px;
+  }
+
+  .separator {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .featMain h1,
+  .romex h1,
+  .solutions-title h1,
+  .testimonials-title h1 {
+    font-size: 27px;
+  }
+
+  .logo h1 {
+    font-size: 40px;
+  }
+
+  .submenu h2 {
+    font-size: 12px;
+  }
+
+  .slider-container {
+    width: 380px;
+  }
+
+  .solutions-info h2 {
+    width: 100%;
+  }
+
+  .solutions-info img {
+    width: 160px;
+  }
+
+  footer {
+    width: 95%;
+  }
+
+  .logofooter,
+  .contactfooter {
+    width: 35%;
+  }
+
+  .navfooter {
+    width: 20%;
+  }
+
+  .navfooter li {
+    font-size: 10px;
+  }
+
+  .contactfooter .fas,
+  .contactfooter .fab {
+    font-size: 12px;
+  }
+
+  .contactfooter h1 {
+    font-size: 16px;
+  }
+
+  .contactfooter p {
+    font-size: 10px;
+  }
+
+  .separator {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logofooter,
+  .navfooter,
+  .contactfooter {
+    width: 100%;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer div {
+    margin: 0 auto;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .navfooter a {
+    padding: 0px;
+    text-align: center;
+  }
+
+  .contactfooter {
+    text-align: center;
+  }
+}
