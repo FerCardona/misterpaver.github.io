@@ -43,24 +43,24 @@
 }
 
 .hardscape {
-  background: url(/images/gallery/services/hardscapeb.jpeg) no-repeat bottom right;
+  background: url(../images/gallery/services/hardscapeb.jpeg) no-repeat bottom right;
 }
 
 .masonry {
-  background: url(/images/gallery/services/masonry.jpg) no-repeat right;
+  background: url(../images/gallery/services/masonry.jpg) no-repeat right;
 }
 
 .stone-work {
-  background: url(/images/gallery/services/retain3.jpg) no-repeat center;
+  background: url(../images/gallery/services/retain3.jpg) no-repeat center;
 }
 
 
 .softscape {
-  background: url(/images/gallery/services/creative.jpg) no-repeat bottom;
+  background: url(../images/gallery/services/creative.jpg) no-repeat bottom;
 }
 
 .romex_serv {
-  background: url(/images/gallery/services/romex2.jpg) no-repeat center;
+  background: url(../images/gallery/services/romex2.jpg) no-repeat center;
 }
 
 .hardscape,
