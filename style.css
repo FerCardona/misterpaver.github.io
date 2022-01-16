@@ -22,7 +22,7 @@
   line-height: 1.5;
   font-family: 'Sansita', sans-serif;
   color: #fff;
-  background-color: #000;
+  background-color: #3a3a3a;
 }
 
 * p {
@@ -538,12 +538,15 @@ footer {
   }
 }
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 530px) {
   header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .feature-info h2, .solutions-info h2 {
+    font-size: 12px;
   }
 
   .logofooter,
