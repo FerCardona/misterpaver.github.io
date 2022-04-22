@@ -332,7 +332,8 @@ footer {
   text-transform: uppercase;
 }
 
-.navfooter li:hover {
+.navfooter li:hover,
+.contactfooter a:hover {
   color: #72D03D;
 }
 
